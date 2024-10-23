@@ -1,5 +1,26 @@
-import React from 'react'
-// import { Bar } from 'react-chartjs-2';
+import React, { useEffect,useState } from 'react'
+
+
+const chartData = () => {
+  const [data,setData] = ([]);
+  const [loading,setLoading] = (false)
+
+  //Fechting bar data from data.json
+  useEffect(() => {
+    async function fetchData(){
+      try{
+        const response =  await fetch('/public/data.json')
+        const data = await response.json();
+        setData(data)
+      }catch(error){
+        throw new Error(error)
+      }finally{
+        setLoading(false)
+      }
+    }
+    fetchData()
+  },[])
+}
 
 
 function Bar(){
