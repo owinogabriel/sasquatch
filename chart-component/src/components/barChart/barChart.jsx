@@ -1,26 +1,36 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const BarChart = () => {
   const [chartData, setChartData] = useState(null);
-  const [data, setData] = useState([]);  // Initialize with useState([])
-  const [loading, setLoading] = useState(true);  // Set loading state correctly
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  // Fetching bar data from data.json
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch('/public/data.json');
         const result = await response.json();
 
-        setData(result);  // Set result from API to state
+        setData(result); 
 
         const chartData = {
-          labels: result.labels,  // Use dynamic labels from API
+          labels: result.labels,
           datasets: [
             {
               label: 'Weekly Sales',
-              data: result.data,  // Use dynamic data from API
+              data: result.data,
               backgroundColor: 'rgba(75, 192, 192, 0.6)',
               borderColor: 'rgba(75, 192, 192, 1)',
               borderWidth: 1,
@@ -28,9 +38,8 @@ const BarChart = () => {
           ],
         };
 
-        setChartData(chartData);  // Set the chart data
-        setLoading(false);  // Turn off loading when data is ready
-
+        setChartData(chartData);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
@@ -40,25 +49,37 @@ const BarChart = () => {
     fetchData();
   }, []);
 
+  // calculation (replace these with real values as needed)
+  const totalThisMonth = 478.33;
+  const percentageChange = 2.4;
+
   if (loading) {
-    return <div>Loading...</div>;  // Add a loading indicator
+    return <div>Loading...</div>;
   }
 
   return (
-    <div className='fixed bg-primary w-[35%] h-96 ml-96 mt-5 rounded-2xl'>
-      <div className='flex flex-row ml-10 mt-5 text-black text-xl font-bold  top-4'>
+    <div className="fixed bg-primary w-[35%] h-auto ml-96 mt-5 rounded-2xl">
+      <div className="flex flex-row ml-10 mt-5 text-black text-xl font-bold top-4">
         Spending - Last 7 days
       </div>
-      <div className='flex '>
-        <div className='bg-background w-[12%] h-12 rounded-md mt-48 ml-9'></div>
-
-        {data.length > 0 ? (  // Ensure data is not empty before mapping
-          data.map((entry) => (
-            <div key={entry.day} className='hidden'>{entry.amount}</div>
-          ))
+      <div className="flex justify-center items-center">
+        {chartData ? (
+          <Bar data={chartData} options={{ responsive: true, maintainAspectRatio: false }} />
         ) : (
-          <p>No data available</p>  // Handle empty data case
+          <p>No data available</p>
         )}
+      </div>
+
+      {/* Bottom section for "Total this month" */}
+      <div className="mt-5 p-4 bg-[#F8F4EF] rounded-lg text-center">
+        <div className="text-gray-500 text-sm">Total this month</div>
+        <div className="text-3xl font-bold text-black">${totalThisMonth.toFixed(2)}</div>
+        <div className="flex items-center justify-center text-sm mt-1">
+          <span className="text-green-600 font-semibold">
+            {percentageChange > 0 ? `+${percentageChange}%` : `${percentageChange}%`}
+          </span>
+          <span className="text-gray-500 ml-1">from last month</span>
+        </div>
       </div>
     </div>
   );
