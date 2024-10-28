@@ -79,6 +79,7 @@ const BarChart = () => {
         <div className="text-3xl font-bold text-black flex">${totalThisMonth.toFixed(2)}</div>
 
         <div className="flex items-center justify-center text-sm mt-1 ml-72">
+          
           <div className="text-green-600 font-semibold ml-10 -mt-11">
             {percentageChange > 0 ? `+${percentageChange}%` : `${percentageChange}%`}
             <br /><span className="text-gray-500 ml-1 mt-9">from last month</span>
