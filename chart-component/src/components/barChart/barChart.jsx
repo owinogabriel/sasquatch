@@ -31,9 +31,10 @@ const BarChart = () => {
             {
               label: 'Weekly Sales',
               data: result.data,
-              backgroundColor: 'rgba(75, 192, 192, 0.6)',
-              borderColor: 'rgba(75, 192, 192, 1)',
+              backgroundColor: /*rgba(75, 192, 192, 0.6)*/'#ec775f',
+              borderColor: '#ec775f',
               borderWidth: 1,
+              
             },
           ],
         };
@@ -54,7 +55,7 @@ const BarChart = () => {
   const percentageChange = 2.4;
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className='text-amber-300'>Loading...</div>;
   }
 
   return (
@@ -72,14 +73,17 @@ const BarChart = () => {
 
       {/* Bottom section for "Total this month" */}
       <div className="mt-5 p-4 bg-[#F8F4EF] rounded-lg text-center mb-3">
+
         <div className="text-gray-500 text-sm flex">Total this month</div>
+        
         <div className="text-3xl font-bold text-black flex">${totalThisMonth.toFixed(2)}</div>
+
         <div className="flex items-center justify-center text-sm mt-1 ml-72">
           <div className="text-green-600 font-semibold ml-10 -mt-11">
             {percentageChange > 0 ? `+${percentageChange}%` : `${percentageChange}%`}
-            <br />   <span className="text-gray-500 ml-1 mt-9">from last month</span>
+            <br /><span className="text-gray-500 ml-1 mt-9">from last month</span>
           </div>
-       
+
         </div>
       </div>
     </div>
