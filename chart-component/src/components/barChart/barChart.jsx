@@ -23,7 +23,7 @@ const BarChart = () => {
         const response = await fetch('/public/data.json');
         const result = await response.json();
 
-        setData(result); 
+        setData(result);
 
         const chartData = {
           labels: result.labels,
