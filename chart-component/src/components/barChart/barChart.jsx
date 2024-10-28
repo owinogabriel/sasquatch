@@ -62,7 +62,7 @@ const BarChart = () => {
       <div className="flex flex-row ml-10 mt-5 text-black text-xl font-bold top-4">
         Spending - Last 7 days
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center cursor-pointer">
         {chartData ? (
           <Bar data={chartData} options={{ responsive: true, maintainAspectRatio: false }} />
         ) : (
