@@ -71,14 +71,15 @@ const BarChart = () => {
       </div>
 
       {/* Bottom section for "Total this month" */}
-      <div className="mt-5 p-4 bg-[#F8F4EF] rounded-lg text-center">
-        <div className="text-gray-500 text-sm">Total this month</div>
-        <div className="text-3xl font-bold text-black">${totalThisMonth.toFixed(2)}</div>
-        <div className="flex items-center justify-center text-sm mt-1">
-          <span className="text-green-600 font-semibold">
+      <div className="mt-5 p-4 bg-[#F8F4EF] rounded-lg text-center mb-3">
+        <div className="text-gray-500 text-sm flex">Total this month</div>
+        <div className="text-3xl font-bold text-black flex">${totalThisMonth.toFixed(2)}</div>
+        <div className="flex items-center justify-center text-sm mt-1 ml-72">
+          <div className="text-green-600 font-semibold ml-10 -mt-11">
             {percentageChange > 0 ? `+${percentageChange}%` : `${percentageChange}%`}
-          </span>
-          <span className="text-gray-500 ml-1">from last month</span>
+            <br />   <span className="text-gray-500 ml-1 mt-9">from last month</span>
+          </div>
+       
         </div>
       </div>
     </div>
