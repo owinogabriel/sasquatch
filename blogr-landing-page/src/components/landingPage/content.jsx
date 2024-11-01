@@ -9,7 +9,7 @@ const Content = () => {
       <p className='mt-5 text-slate-100  
         font-weight: 500;'>
         Grow your audience and build your online brand
-        </p>
+      </p>
 
       <div className=' flex  justify-center font-weight: 500  gap-8 mt-10 
        mr-16 text-slate-100 font-medium'>
