@@ -3,6 +3,7 @@ import './App.css'
 
 import NavBar from './components/landingPage/Navbar'
 import Content from './components/landingPage/content'
+import Future from './components/designed/future'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <NavBar />
     <Content />
+    <Future />
     </>
   )
 }
