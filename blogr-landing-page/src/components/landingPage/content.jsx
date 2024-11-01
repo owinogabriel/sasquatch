@@ -13,8 +13,17 @@ const Content = () => {
 
       <div className=' flex  justify-center font-weight: 500  gap-8 mt-10 
        mr-16 text-slate-100 font-medium'>
-        <button className='  bg-[#FE7D87] hover:bg-neutral-600  py-2 px-4 rounded-xl'> Start For Free</button>
-        <button className='  bg-[#FDFFFF]   text-orange-500 py-2 px-4 rounded-xl hover:bg-neutral-800'>Learn More</button>
+        <button className='  bg-[#FE7D87] hover:bg-neutral-600  
+        py-2 px-4 rounded-xl'>
+          Start For Free
+        </button>
+
+        <button className='  bg-[#FDFFFF]   text-orange-500 
+        py-2 px-4 rounded-xl 
+        hover:bg-neutral-800'>
+          Learn More
+        </button>
+
       </div>
 
     </div>
