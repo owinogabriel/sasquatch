@@ -1,5 +1,5 @@
 import React from 'react';
-// import bg from '../assets/bg.svg'
+
 
 function NavBar() {
   return (
@@ -13,6 +13,7 @@ function NavBar() {
       </div>
 
       <div className="m-14 mr-[30rem]">
+
         <ul className="inline-flex gap-4 text-slate-100 font-medium">
           <li className="hover:underline">
             <a href="">
@@ -27,14 +28,14 @@ function NavBar() {
 
           {/* Dropdown Menu Item for Contact */}
           <li className="relative group">
-            <a href="#" className="hover:underline">
-              Contact <span className="">&#9662;</span>
+            <a href="#" className="hover:underline inline-flex">
+              Contact <span className="ml-1 ">&#9662;</span>
             </a>
 
             {/* Dropdown Menu */}
-            <ul className="absolute left-0 hidden mt-2 w-32 bg-white text-gray-800 shadow-md rounded group-hover:block">
+            <ul className="absolute left-0 hidden text-justify mt-2 w-32 bg-white text-gray-800 shadow-md rounded group-hover:block">
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                <a href="#" className="block px-2 py-2 hover:bg-gray-100">
                   Contact
                 </a>
               </li>
@@ -49,15 +50,27 @@ function NavBar() {
                 </a>
               </li>
             </ul>
+
           </li>
         </ul>
       </div>
 
-      <div className="flex h-[3rem] gap-8 mt-10 mr-16 text-slate-100 font-medium">
-        <button className="">Login</button>
-        <button className="bg-[#FE7D87] w-max py-2 px-4 rounded-xl">
+      <div className="flex h-[3rem] gap-8 mt-10 mr-16
+       text-slate-100 
+       font-medium">
+
+        <button className=" hover:bg-slate-300
+         w-max py-2 px-4 rounded-xl">
+          Login
+        </button>
+
+        <button className="hover:bg-slate-300 
+        bg-[#FE7D87] 
+        w-max py-2 px-4 
+        rounded-xl">
           Sign Up
         </button>
+        
       </div>
     </nav>
   );
