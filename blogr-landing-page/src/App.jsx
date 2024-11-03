@@ -4,6 +4,7 @@ import './App.css'
 import NavBar from './components/landingPage/Navbar'
 import Content from './components/landingPage/content'
 import Future from './components/designed/future'
+import Blogr from './components/Blogr/blogr'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <NavBar />
     <Content />
     <Future />
+    <Blogr />
     </>
   )
 }
