@@ -5,6 +5,7 @@ import NavBar from './components/landingPage/Navbar'
 import Content from './components/landingPage/content'
 import Future from './components/designed/future'
 import Blogr from './components/Blogr/blogr'
+import Tooling from './components/tooling/Tooling'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Content />
     <Future />
     <Blogr />
+    <Tooling />
     </>
   )
 }
