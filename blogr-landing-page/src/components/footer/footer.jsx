@@ -32,7 +32,7 @@ const Footer = () => {
           <ul className='text-xs space-y-2' style={{ color: '#FAFAF9' }}>
             <li className='hover:underline'><a href="">Contact</a></li>
             <li className='hover:underline'><a href=""> Newsletter</a></li>
-            <li ><a href="">Linkedln</a></li>
+            <li className='hover:underline'><a href="">Linkedln</a></li>
           </ul>
         </div>
 
