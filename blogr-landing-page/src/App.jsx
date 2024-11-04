@@ -6,6 +6,7 @@ import Content from './components/landingPage/content'
 import Future from './components/designed/future'
 import Blogr from './components/Blogr/blogr'
 import Tooling from './components/tooling/Tooling'
+import Footer from './components/footer/footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <Future />
     <Blogr />
     <Tooling />
+    <Footer />
     </>
   )
 }
