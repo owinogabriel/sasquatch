@@ -17,12 +17,12 @@ function NavBar() {
         <ul className="inline-flex gap-4 text-slate-100 font-medium">
           <li className="hover:underline">
             <a href="">
-              Product<span>&#9662;</span>
+              Product<span className="ml-1 ">&#9662;</span>
             </a>
           </li>
           <li className="hover:underline">
             <a href="">
-              Company<span>&#9662;</span>
+              Company<span className="ml-1 ">&#9662;</span>
             </a>
           </li>
 
