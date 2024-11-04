@@ -40,12 +40,12 @@ function NavBar() {
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                <a href="#" className="block px-2 py-2 hover:bg-gray-100">
                   Newsletter
                 </a>
               </li>
               <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                <a href="#" className="block px-2 py-2 hover:bg-gray-100">
                   LinkedIn
                 </a>
               </li>
