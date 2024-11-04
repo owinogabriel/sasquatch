@@ -10,7 +10,7 @@ const Future = () => {
     }}>
       <div>
 
-        <div className=' text-center ml-[70%] font-sans font-bold w-max -mt-10 mb-28 color-[#405973] text-3xl' style={{ color: '#405973' }}>
+        <div className=' text-center ml-[70%] font-sans font-bold w-max -mt-10 mb-28 text-3xl' style={{ color: '#405973' }}>
           <h1>Designed for the future</h1>
         </div>
 
