@@ -8,7 +8,7 @@ const Footer = () => {
       <div className='inline-flex justify-center text-justify ml-[6rem] gap-[14rem]'>
         <div>
           <div className='font-base text-white text-base mb-3'>Product</div>
-          <ul className='text-xs space-y-2' style={{ color: '#FAFAF9' }}>
+           <ul className='text-xs space-y-2' style={{ color: '#FAFAF9' }}>
             <li className='hover:underline'><a href="">Overview</a></li>
             <li className='hover:underline'><a href=""> Pricing</a></li>
             <li className='hover:underline'><a href="">Marketplace</a></li>
