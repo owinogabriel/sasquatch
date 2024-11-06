@@ -4,11 +4,11 @@ const data = {
   data: [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
 };
 
-// Export a function that simulates a fetch
+// a function that simulates a fetch
 export const fetchData = async () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(data);
-    }, 1000); // Simulate 1 second delay
+    }, 1000); 
   });
 };
