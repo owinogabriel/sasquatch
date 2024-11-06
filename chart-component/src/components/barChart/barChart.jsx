@@ -1,3 +1,4 @@
+// BarChart.js
 import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import {
@@ -10,20 +11,19 @@ import {
   Legend,
 } from 'chart.js';
 
+import { fetchData } from '../data/data.js';
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const BarChart = () => {
   const [chartData, setChartData] = useState(null);
-  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function fetchData() {
+    //  async function to fetch data
+    async function loadChartData() {
       try {
-        const response = await fetch('/data/data.json');
-        const result = await response.json();
-
-        setData(result);
+        const result = await fetchData(); 
 
         const chartData = {
           labels: result.labels,
@@ -31,23 +31,22 @@ const BarChart = () => {
             {
               label: 'Weekly Sales',
               data: result.data,
-              backgroundColor: /*rgba(75, 192, 192, 0.6)*/'#ec775f',
+              backgroundColor: '#ec775f',
               borderColor: '#ec775f',
               borderWidth: 1,
-              
             },
           ],
         };
 
         setChartData(chartData);
-        setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
         setLoading(false);
       }
     }
-    fetchData();
+
+    loadChartData();
   }, []);
 
   // calculation (replace these with real values as needed)
@@ -55,7 +54,7 @@ const BarChart = () => {
   const percentageChange = 2.4;
 
   if (loading) {
-    return <div className='text-amber-300'>Loading...</div>;
+    return <div className="text-amber-300">Loading...</div>;
   }
 
   return (
@@ -75,11 +74,11 @@ const BarChart = () => {
       <div className="mt-5 p-4 bg-[#F8F4EF] rounded-lg text-center mb-3">
 
         <div className="text-gray-500 text-sm flex">Total this month</div>
-        
+
         <div className="text-3xl font-bold text-black flex">${totalThisMonth.toFixed(2)}</div>
 
         <div className="flex items-center justify-center text-sm mt-1 ml-72">
-          
+
           <div className="text-green-600 font-semibold ml-10 -mt-11">
             {percentageChange > 0 ? `+${percentageChange}%` : `${percentageChange}%`}
             <br /><span className="text-gray-500 ml-1 mt-9">from last month</span>
