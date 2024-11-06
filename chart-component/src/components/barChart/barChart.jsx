@@ -20,7 +20,7 @@ const BarChart = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/public/data.json');
+        const response = await fetch('/data/data.json');
         const result = await response.json();
 
         setData(result);
