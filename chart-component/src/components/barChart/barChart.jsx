@@ -23,7 +23,7 @@ const BarChart = () => {
     //  async function to fetch data
     async function loadChartData() {
       try {
-        const result = await fetchData(); 
+        const result = await fetchData();
 
         const chartData = {
           labels: result.labels,
