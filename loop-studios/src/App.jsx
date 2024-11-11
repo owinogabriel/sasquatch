@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import {Navbar} from './components/common/navbar'
 
 function App() {
  
 
   return (
-   <div className='text-3xl font-bold underline'>Hello</div>
+   <>
+   <Navbar />
+   </>
   )
 }
 
