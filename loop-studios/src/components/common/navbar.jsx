@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div className="w-screen h-[100vh] justify-between bg-[url('/images/desktop/hero.jpg')] md:max-xl:flex flex text-white bg-no-repeat">
+    <div className="w-screen h-screen justify-between bg-[url('/images/desktop/hero.jpg')] flex text-white bg-no-repeat">
       <div className='mt-[4rem] ml-[10rem] text-4xl font-extrabold'>loopstudios</div>
       <div className='mr-[5rem] mt-[5rem] '>
         <ul className='inline-flex gap-6'>
