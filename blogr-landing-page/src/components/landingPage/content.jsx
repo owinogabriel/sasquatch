@@ -2,7 +2,7 @@ import React from 'react'
 
 const Content = () => {
   return (
-    <div className='px-24 -mt-72 justify-between' >
+    <div className='px-24 -mt-72 justify-between'>
 
       <h1 className='font-extrabold text-4xl
     text-slate-100'>A modern publishing platform</h1>
