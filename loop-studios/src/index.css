@@ -5,7 +5,7 @@
 html {
   scroll-behavior: smooth;
   max-height: auto;
-  /* overflow: hidden; */
   scrollbar-width: none;
   scroll-snap-type: none;
+    overflow-x: hidden;
 }
