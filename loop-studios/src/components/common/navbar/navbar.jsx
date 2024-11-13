@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <section className="relative h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/desktop/hero.jpg')" }}>
+    <section className="relative h-screen bg-cover bg-center bg-no-repeat mb-[4rem]" style={{ backgroundImage: "url('/images/desktop/hero.jpg')" }}>
       {/* Overlay for darkening the background */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
