@@ -9,3 +9,19 @@ html {
   scroll-snap-type: none;
     overflow-x: hidden;
 }
+
+/* Adjust background size for smaller screens */
+@media (max-width: 768px) {
+  .group {
+    display: none;
+  }
+  .btn{
+    display: block;
+  }
+}
+@media (min-width: 1024px) { 
+.btn{
+display: none;
+}
+
+ }
