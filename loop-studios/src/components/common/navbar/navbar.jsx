@@ -1,25 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
-  return (
-    <div className="w-screen h-screen justify-between bg-[url('/images/desktop/hero.jpg')] flex text-white bg-no-repeat">
-      <div className="mt-[4rem] ml-[10rem] text-4xl font-extrabold">loopstudios</div>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-      <div className="inline-grid mt-[5rem]">
-        <ul className="inline-flex gap-6 mr-[5rem] ml-[30rem]">
-          <li><a href="">About</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Support</a></li>
-        </ul>
-        <div className="border h-[12rem] flex w-[23rem] mt-[5rem] mr-[50rem]">
-          <div className="text-5xl font-thin ml-5 mt-4">
-            IMMERSIVE <br /> EXPERIENCES <br />THAT DELIVER
+  return (
+    <section className="relative h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/desktop/hero.jpg')" }}>
+      {/* Overlay for darkening the background */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      {/* Content Container */}
+      <div className="relative z-10 flex flex-col justify-between h-full text-white">
+        {/* Navbar */}
+        <header className="flex justify-between items-center p-8">
+          {/* Logo */}
+          <div className="text-3xl font-bold">
+            loopstudios
+          </div>
+
+          {/* Hamburger Menu for Mobile */}
+          <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+            <button className="text-white text-3xl btn">
+              ☰
+            </button>
+          </div>
+
+          {/* Navigation Links (hidden on mobile and visible on medium and larger screens) */}
+          <nav className=" group md:hidden md:flex md:relative md:flex-row space-x-8 md:items-center md:bg-transparent">
+            <a href="#" className="hover:underline">About</a>
+            <a href="#" className="hover:underline">Careers</a>
+            <a href="#" className="hover:underline">Events</a>
+            <a href="#" className="hover:underline">Products</a>
+            <a href="#" className="hover:underline">Support</a>
+          </nav>
+
+          {/* Mobile Navigation Links (visible only when the hamburger is clicked) */}
+          <nav className={`flex-col items-start space-y-4 absolute top-20 left-0 w-full bg-black bg-opacity-80 p-8 md:hidden ${menuOpen ? 'flex' : 'hidden'}`}>
+            <a href="#" className="hover:underline">About</a>
+            <a href="#" className="hover:underline">Careers</a>
+            <a href="#" className="hover:underline">Events</a>
+            <a href="#" className="hover:underline">Products</a>
+            <a href="#" className="hover:underline">Support</a>
+          </nav>
+        </header>
+
+        {/* Main Hero Text */}
+        <div className="flex items-center justify-center flex-1 px-8">
+          <div className="border-2 border-white p-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-light leading-tight">
+              IMMERSIVE <br /> EXPERIENCES <br /> THAT DELIVER
+            </h1>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
