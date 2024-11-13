@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Navbar */}
         <header className="flex justify-between items-center p-8">
           {/* Logo */}
-          <div className="text-3xl font-bold">
+          <div className="text-3xl font-bold logo">
             loopstudios
           </div>
 
