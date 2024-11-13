@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="mt-10 mb-5 px-4 md:px-20">
+    <section className="mb-5 px-4 md:px-20">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
         <img
           src="/images/desktop/hrr.jpg"
