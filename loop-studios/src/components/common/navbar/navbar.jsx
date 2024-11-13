@@ -4,12 +4,12 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMouseLeave = () => {
-   // Set a timeout to close the menu after 1 seconds (1000ms)
-   const id = setTimeout(() => {
-    setMenuOpen(false);
-  }, 1000);
+    // Set a timeout to close the menu after 1 seconds (1000ms)
+    const id = setTimeout(() => {
+      setMenuOpen(false);
+    }, 1000);
 
-  setTimeoutId(id);
+    setTimeoutId(id);
   };
 
   return (
@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* Hamburger Menu for Mobile */}
           <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} >
             <button className="text-white text-3xl btn">
-            {menuOpen ? 'X' : '☰'}
+              {menuOpen ? 'X' : '☰'}
             </button>
           </div>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
           </nav>
 
           {/* Mobile Navigation Links (visible only when the hamburger is clicked) */}
-          <nav className={`flex-col items-start space-y-4 absolute top-20 left-0 w-full bg-black bg-opacity-80 p-8 md:hidden ${menuOpen ? 'flex' : 'hidden'}`}   onMouseLeave={handleMouseLeave}  // Close the menu when mouse leaves the mobile menu
+          <nav className={`flex-col items-start space-y-4 absolute top-20 left-0 w-full bg-black bg-opacity-80 p-8 md:hidden ${menuOpen ? 'flex' : 'hidden'}`} onMouseLeave={handleMouseLeave}  // Close the menu when mouse leaves the mobile menu
           >
             <a href="#" className="hover:underline">About</a>
             <a href="#" className="hover:underline">Careers</a>
