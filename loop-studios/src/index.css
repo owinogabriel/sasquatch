@@ -15,6 +15,31 @@ html {
   .group {
     display: none;
   }
+  .logo{
+    font-size: 1rem;
+  }
+  .goat{
+   margin-top: 0rem;
+   margin-right: 40rem;
+  display: grid;
+  
+  }
+
+  .goat h1{
+    font-size: 1.5rem;           
+  font-weight: 300;                      
+  text-align: center;          
+            
+  margin-top: 0;              
+  margin-right: 0;             
+  }
+
+  .goat p{
+    font-size: 10px;
+  text-align: justify;
+   align-items:start;
+   line-height: 1.4;
+  }
   .btn{
     display: block;
   }
@@ -25,3 +50,9 @@ display: none;
 }
 
  }
+
+ @media (min-width: 640px) { 
+  .btn{
+    display: none;
+  }
+  }
