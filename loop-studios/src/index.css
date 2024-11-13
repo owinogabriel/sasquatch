@@ -44,10 +44,27 @@ html {
   .btn{
     display: block;
   }
+  .gallery{
+    display:none;
+
+  }
+  .header{
+    display: flex;
+justify-self: center;
+margin-left: 12rem;
+  }
+  .mobile{
+    width: 80%;
+
+  }
 }
 @media (min-width: 1024px) { 
 .btn{
 display: none;
+}
+.mobile{
+ display: block;
+
 }
 
  }
@@ -56,4 +73,8 @@ display: none;
   .btn{
     display: none;
   }
+  .mobile{
+    display: none;
+   
+   }
   }
