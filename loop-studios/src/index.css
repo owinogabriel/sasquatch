@@ -102,6 +102,14 @@ display: none;
 
 }
 
+html {
+  scroll-behavior: smooth;
+  max-height: auto;
+  scrollbar-width: none;
+  scroll-snap-type: none;
+    overflow-x: hidden;
+}
+
  }
 
  @media (min-width: 640px) { 
@@ -112,4 +120,12 @@ display: none;
     display: none;
    
    }
+   
+html {
+  scroll-behavior: smooth;
+  max-height: auto;
+  scrollbar-width: none;
+  scroll-snap-type: none;
+    overflow-x: hidden;
+}
   }
