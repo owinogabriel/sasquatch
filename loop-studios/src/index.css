@@ -33,12 +33,14 @@ html {
   }
   .list2{
    display: block;
-   
-   
+  }
+  .logo2{
+ font-size: 2rem;
   }
   .footer{
-    width: max-content;
-    height:70vh
+    width:max-content;
+    height:70vh;
+    margin-bottom: 2rem;
   }
 
   .goat h1{
