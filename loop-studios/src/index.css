@@ -15,6 +15,14 @@ html {
   .group {
     display: none;
   }
+  
+html {
+  scroll-behavior: smooth;
+  max-height: auto;
+  scrollbar-width: none;
+  scroll-snap-type: none;
+    overflow-x: hidden;
+}
   .logo{
     font-size: 1rem;
   }
