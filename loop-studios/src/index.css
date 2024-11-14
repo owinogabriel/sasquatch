@@ -55,7 +55,17 @@ html {
   }
   .mobile{
     width: 80%;
-
+  }
+  .header{
+ margin-left: 6rem;
+   padding-right: 2rem;
+  justify-self: center;
+   margin-right: 0rem;
+   width: max-content;
+   
+  }
+  .bnt{
+    margin-right: 4rem;
   }
 }
 @media (min-width: 1024px) { 
