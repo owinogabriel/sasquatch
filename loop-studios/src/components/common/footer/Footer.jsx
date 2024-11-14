@@ -42,10 +42,10 @@ export const Footer = () => {
               <img src="images//instagram.svg" alt="Facebook" />
             </a>
             <footer className='text-[#646363] -ml-[14rem] text-base mt-[2rem]'>
-            &copy;2021 Loopstudios.All rights reserved.
-          </footer>
+              &copy;2021 Loopstudios.All rights reserved.
+            </footer>
           </div>
-       
+
 
         </div>
         <div className=' ml-[30rem] mtn'>
