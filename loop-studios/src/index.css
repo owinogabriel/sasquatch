@@ -15,7 +15,7 @@ html {
   .group {
     display: none;
   }
-  
+ 
   .logo{
     font-size: 1rem;
   }
@@ -96,6 +96,10 @@ display: none;
  display: block;
 
 }
+.footer{
+ height: 25vh;
+}
+
  }
 
  @media (min-width: 640px) { 
