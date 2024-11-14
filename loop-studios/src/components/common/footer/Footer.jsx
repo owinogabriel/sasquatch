@@ -3,15 +3,24 @@ import React from 'react'
 export const Footer = () => {
   return (
 
-    <section className='bg-black w-screen h-[30vh] flex mb-0'>
+    <section className='bg-black w-screen h-[30vh] flex mb-0 footer'>
       <div className='flex mt-[2rem] ml-[8rem]'>
 
         <div className='text-white text-3xl font-bold logo'>
           <h1>loopstudios</h1>
         </div>
-        <div className='text-white mt-[3rem]'>
-          <ul className=' space-x-3 -ml-[10.5rem]'>
+        <div className='text-white mt-[3rem] list'>
+          <ul className=' space-x-3 -ml-[10.5rem] md:grid-cols-2 lg:grid-cols-1'>
             <a href="#" className="hover:underline">Careers</a>
+            <a href="#" className="hover:underline">Events</a>
+            <a href="#" className="hover:underline">Products</a>
+            <a href="#" className="hover:underline">Support</a></ul>
+        </div>
+
+        <div className='text-white mt-[3rem]  hidden list2'>
+          <ul className=' space-x-3 gap-6 text-justify  grid grid-cols-1 '>
+          <a href="#" className="hover:underline ml-3">About</a>
+            <a href="#" className="hover:underline ml-3">Careers</a>
             <a href="#" className="hover:underline">Events</a>
             <a href="#" className="hover:underline">Products</a>
             <a href="#" className="hover:underline">Support</a></ul>

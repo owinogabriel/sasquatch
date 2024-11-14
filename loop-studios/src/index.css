@@ -28,6 +28,18 @@ html {
   .hero{
     margin-top: 2rem;
   }
+  .list{
+    display: none;
+  }
+  .list2{
+   display: block;
+   
+   
+  }
+  .footer{
+    width: max-content;
+    height:70vh
+  }
 
   .goat h1{
     font-size: 1.5rem;           
