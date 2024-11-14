@@ -25,6 +25,9 @@ html {
   width: max-content;
   
   }
+  .hero{
+    margin-top: 2rem;
+  }
 
   .goat h1{
     font-size: 1.5rem;           
