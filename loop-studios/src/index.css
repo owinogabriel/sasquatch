@@ -46,10 +46,12 @@ html {
  font-size: 2rem;
   }
   .footer{
-   
     height:70vh;
- 
   }
+  .mtn{
+display: none;
+  }
+  .mtn
 
   .goat h1{
     font-size: 1.5rem;           

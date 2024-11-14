@@ -48,7 +48,7 @@ export const Footer = () => {
        
 
         </div>
-        <div className=' ml-[30rem]'>
+        <div className=' ml-[30rem] mtn'>
 
           <div className='inline-flex justify-between gap-4 ml-[8rem] '>
 
