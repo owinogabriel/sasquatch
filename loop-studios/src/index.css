@@ -16,21 +16,14 @@ html {
     display: none;
   }
   
-html {
-  scroll-behavior: smooth;
-  max-height: auto;
-  scrollbar-width: none;
-  scroll-snap-type: none;
-    overflow-x: hidden;
-}
   .logo{
     font-size: 1rem;
   }
   .goat{
    margin-top: 0rem;
    margin-right: 40rem;
-  display: grid;
-  width: max-content;
+   display: grid;
+   width: max-content;
   
   }
   .hero{
@@ -48,11 +41,11 @@ html {
   .footer{
     width: 100vh;
   }
-  .mtn{
-display: none;
-  }
-  .mtn
 
+  .mtn{
+   display: none;
+  }
+ 
   .goat h1{
     font-size: 1.5rem;           
   font-weight: 300;                      
@@ -84,9 +77,9 @@ display: none;
     width: 80%;
   }
   .header{
- margin-left: 6rem;
+   margin-left: 6rem;
    padding-right: 2rem;
-  justify-self: center;
+   justify-self: center;
    margin-right: 0rem;
    width: max-content;
    
@@ -103,15 +96,6 @@ display: none;
  display: block;
 
 }
-
-html {
-  scroll-behavior: smooth;
-  max-height: auto;
-  scrollbar-width: none;
-  scroll-snap-type: none;
-    overflow-x: hidden;
-}
-
  }
 
  @media (min-width: 640px) { 
@@ -123,11 +107,4 @@ html {
    
    }
    
-html {
-  scroll-behavior: smooth;
-  max-height: auto;
-  scrollbar-width: none;
-  scroll-snap-type: none;
-    overflow-x: hidden;
-}
   }
