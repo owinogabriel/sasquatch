@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
   return (
 
-    <section className='bg-black w-max h-[30vh] flex mb-0 footer'>
+    <section className='bg-black w-screen h-[30vh] flex mb-0 footer'>
       <div className='flex mt-[2rem] ml-[8rem]'>
 
         <div className='text-white text-3xl font-bold logo2'>
