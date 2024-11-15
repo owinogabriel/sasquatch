@@ -24,7 +24,7 @@ export const Footer = () => {
             <a href="#" className="hover:underline">Events</a>
             <a href="#" className="hover:underline">Products</a>
             <a href="#" className="hover:underline">Support</a></ul>
-          <div className='inline-flex justify-between gap-4 -ml-[8rem]  mt-[2rem]'>
+          <div className='inline-flex justify-between gap-4 -ml-[9rem]  mt-[2rem]'>
 
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer ">
               <img src="images/facebook.svg" alt="Facebook" />
@@ -41,7 +41,7 @@ export const Footer = () => {
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <img src="images//instagram.svg" alt="Facebook" />
             </a>
-            <footer className='text-[#646363] -ml-[12rem] text-base mt-[2rem]'>
+            <footer className='text-[#646363] -ml-[13rem] text-base mt-[2rem]'>
               &copy;2021 Loopstudios.All rights reserved.
             </footer>
           </div>
