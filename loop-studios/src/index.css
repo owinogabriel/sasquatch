@@ -39,7 +39,12 @@ html {
  font-size: 2rem;
   }
   .footer{
-    width:80vh;
+    width:100vh;
+    scroll-behavior: smooth;
+    max-height: auto;
+    scrollbar-width: none;
+    scroll-snap-type: none;
+      overflow-x: hidden;
   }
 
   .mtn{
