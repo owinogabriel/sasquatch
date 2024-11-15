@@ -17,14 +17,14 @@ export const Footer = () => {
             <a href="#" className="hover:underline">Support</a></ul>
         </div>
 
-        <div className='text-white mt-[3rem]  hidden list2'>
+        <div className='text-white mt-[3rem] ml-[1rem] hidden list2'>
           <ul className=' space-x-3 gap-6 text-justify -ml-[8rem] mt-5 grid grid-cols-1 '>
             <a href="#" className="hover:underline ml-3">About</a>
             <a href="#" className="hover:underline ml-3">Careers</a>
             <a href="#" className="hover:underline">Events</a>
             <a href="#" className="hover:underline">Products</a>
             <a href="#" className="hover:underline">Support</a></ul>
-          <div className='inline-flex justify-between gap-4 -ml-[10rem]  mt-[2rem]'>
+          <div className='inline-flex justify-between gap-4 -ml-[8rem]  mt-[2rem]'>
 
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer ">
               <img src="images/facebook.svg" alt="Facebook" />
@@ -41,7 +41,7 @@ export const Footer = () => {
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <img src="images//instagram.svg" alt="Facebook" />
             </a>
-            <footer className='text-[#646363] -ml-[14rem] text-base mt-[2rem]'>
+            <footer className='text-[#646363] -ml-[12rem] text-base mt-[2rem]'>
               &copy;2021 Loopstudios.All rights reserved.
             </footer>
           </div>
