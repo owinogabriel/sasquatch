@@ -36,7 +36,10 @@ html {
    display: block;
   }
   .logo2{
-    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-right: -1rem;
  font-size: 2rem;
   }
   .footer{
