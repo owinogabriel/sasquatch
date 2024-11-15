@@ -40,11 +40,8 @@ html {
   }
   .footer{
     width:50vh;
-    scroll-behavior: smooth;
-    max-height: auto;
-    scrollbar-width: none;
-    scroll-snap-type: none;
-      overflow-x: hidden;
+    
+      overflow-x:none;
   }
 
   .mtn{
