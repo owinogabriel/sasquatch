@@ -36,12 +36,11 @@ html {
    display: block;
   }
   .logo2{
+    margin-left: 1rem;
  font-size: 2rem;
   }
   .footer{
     width:auto;
-    
-      overflow-x:none;
   }
 
   .mtn{
