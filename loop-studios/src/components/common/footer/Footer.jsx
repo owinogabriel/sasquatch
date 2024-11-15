@@ -41,7 +41,7 @@ export const Footer = () => {
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <img src="images//instagram.svg" alt="Facebook" />
             </a>
-            <footer className='text-[#646363] -ml-[13.8rem] text-base mt-[2rem]'>
+            <footer className='text-[#646363] mb-1 -ml-[13.8rem] text-base mt-[2rem]'>
               &copy;2021 Loopstudios.All rights reserved.
             </footer>
           </div>
