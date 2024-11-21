@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import "./App.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 
@@ -76,7 +76,7 @@ function App() {
           className="age-calculator__form"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <div className="flex-group ">
+          <div className="flex-group text-slate-900">
             <div className="grid-flow inputWrapper">
               <label className="label" htmlFor="day">
                 Day
