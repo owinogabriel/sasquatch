@@ -58,7 +58,7 @@ const BarChart = () => {
   }
 
   return (
-    <div className="fixed bg-primary w-[35%] h-auto ml-96 mt-5 rounded-2xl">
+    <div className="fixed bg-primary w-[38%] h-auto ml-96 mt-5 rounded-2xl">
       <div className="flex flex-row ml-10 mt-5 text-black text-xl font-bold top-4">
         Spending - Last 7 days
       </div>
