@@ -8,7 +8,7 @@ body{
 
 @media (min-width: 640px) { 
   .btn{
-   /* font-size: 10px; */
+display: block;
   }
   .mobile{
     display: none;
