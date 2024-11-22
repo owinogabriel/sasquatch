@@ -8,7 +8,7 @@ function NavBar() {
      w-screen h-[80vh] -ml-8 -mt-11 rounded-bl-[50px]"
       style={{ backgroundSize: '120%' }}
     >
-      <div className="inline-flex mt-10 ml-[10rem] font-extrabold text-4xl text-slate-100">
+      <div className="inline-flex mt-10 ml-[10rem] font-extrabold text-4xl text-slate-100 btn">
         Blogr
       </div>
 
