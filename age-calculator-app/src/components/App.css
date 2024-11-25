@@ -72,3 +72,8 @@
 .hyphen-minus {
   color: var(--clr-primary-400);
 }
+
+
+.error{
+  color: crimson;
+}

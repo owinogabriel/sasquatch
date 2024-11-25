@@ -71,7 +71,7 @@ function App() {
   };
   return (
     <main>
-      <section className="age-calculator">
+      <section className="age-calculator  flex">
         <form
           className="age-calculator__form"
           onSubmit={handleSubmit(onSubmit)}
@@ -95,7 +95,7 @@ function App() {
                 })}
               />
               {errors.day && (
-                <span id="error" className="error">
+                <span id="error" className="error text-red-600">
                   {errors.day.message}
                 </span>
               )}
@@ -118,7 +118,7 @@ function App() {
                 })}
               />
               {errors.month && (
-                <span id="error" className="error">
+                <span id="error" className="error text-red-600">
                   {errors.month.message}
                 </span>
               )}
@@ -144,7 +144,7 @@ function App() {
                 })}
               />
               {errors.year && (
-                <span id="error" className="error">
+                <span id="error" className="error text-red-600">
                   {errors.year.message}
                 </span>
               )}
