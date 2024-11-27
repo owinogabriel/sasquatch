@@ -7,9 +7,6 @@ module.exports = {
       '120%': '120%',
     },},
 
-    screens:{
-      'sm': '640px'
-    }
   },
   plugins: [],
 };
