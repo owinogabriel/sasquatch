@@ -33,8 +33,10 @@ const Navbar = () => {
             </button>
           </div>
 
+
+
           {/* Navigation Links (hidden on mobile and visible on medium and larger screens) */}
-          <nav className=" group md:hidden md:flex md:relative md:flex-row space-x-8 md:items-center md:bg-transparent">
+          <nav className=" group hidden md:flex md:relative md:flex-row space-x-8 md:items-center md:bg-transparent">
             <a href="#" className="hover:underline">About</a>
             <a href="#" className="hover:underline">Careers</a>
             <a href="#" className="hover:underline">Events</a>

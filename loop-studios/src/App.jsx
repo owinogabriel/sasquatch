@@ -9,12 +9,12 @@ function App() {
 
 
   return (
-    <>
+    <main className="space-y-10 md:space-y-20">
       <Navbar />
       <Hero />
       <Creation />
       <Footer />
-    </>
+    </main>
   )
 }
 

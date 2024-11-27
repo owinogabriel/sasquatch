@@ -3,8 +3,8 @@ import React from 'react'
 export const Footer = () => {
   return (
 
-    <section className='bg-black w-full  h-full flex mb-0 footer'>
-      <div className='flex mt-[2rem] ml-[8rem]'>
+    <section className='bg-black w-full h-full flex mb-0 footer'>
+      <div className='flex md:mt-[2rem] md:ml-[8rem]'>
 
         <div className='text-white text-3xl font-bold logo2'>
           <h1>loopstudios</h1>
@@ -48,7 +48,7 @@ export const Footer = () => {
 
 
         </div>
-        <div className=' ml-[30rem] mtn'>
+        <div className=' ml-[3rem] mtn'>
 
           <div className='inline-flex justify-between gap-4 ml-[8rem] '>
 
