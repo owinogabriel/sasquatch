@@ -33,12 +33,12 @@ const Creation = () => {
         </div>
 
         <div className='mr-[5rem] font-normal text-base gallery'>
-          <button className='border border-black px-4 rounded-sm md:hidden'>SEE ALL</button>
+          <button className='border border-black px-4 rounded-sm '>SEE ALL</button>
         </div>
 
       </div>
       {/* {desktop gallery} */}
-      <div className="grid grid-cols-4 gap-4 p-4 md:grid-cols-2 lg:grid-cols-4   ml-[3rem] mr-[3rem] gallery cursor-pointer">
+      <div className="grid grid-cols-4 gap-4 p-4 md:grid-cols-4 w-[10rem] lg:grid-cols-4  sm:hidden md:block ml-[3rem] mr-[3rem] gallery cursor-pointer">
         {items.map((item, index) => (
           <div key={index} className="relative rounded overflow-hidden transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-104  duration-300">
             <img src={item.src} alt={`Image ${index + 1}`} className="w-full h-auto  " />
@@ -52,7 +52,7 @@ const Creation = () => {
       </div>
 
       {/*mobile layout*/}
-      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 cursor-pointer  ml-[3rem] mr-[3rem] mobile ">
+      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 md:hidden lg:grid-cols-4 cursor-pointer  ml-[3rem] mr-[3rem] mobile ">
         {mobile.map((item, index) => (
           <div key={index} className="relative rounded overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 ">
             <img src={item.src} alt={`Image ${index + 1}`} className="w-full h-auto " />
@@ -64,9 +64,9 @@ const Creation = () => {
           </div>
 
         ))}
-        <div className='ml-[7rem] font-normal text-base mobile'>
+        {/* <div className='ml-[7rem] font-normal text-base mobile'>
           <button className='border border-black px-4 rounded-sm md:hidden '>SEE ALL</button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
