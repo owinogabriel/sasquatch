@@ -38,12 +38,12 @@ const Creation = () => {
 
       </div>
       {/* {desktop gallery} */}
-      <div className="grid grid-cols-4 gap-4 p-4 md:grid-cols-4 w-[10rem] lg:grid-cols-4  sm:hidden md:block ml-[3rem] mr-[3rem] gallery cursor-pointer">
+      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 ml-[3rem] mr-[3rem]">
         {items.map((item, index) => (
           <div key={index} className="relative rounded overflow-hidden transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-104  duration-300">
             <img src={item.src} alt={`Image ${index + 1}`} className="w-full h-auto  " />
             {/* Text overlay */}
-            <div className="absolute inset-0 flex items-center justify-center mt-[23rem] -ml-[4rem] text-2xl">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4 group-hover:bg-opacity-75 transition cursor-pointer">
               <span className="text-white  font-light">{item.text}</span>
             </div>
           </div>
