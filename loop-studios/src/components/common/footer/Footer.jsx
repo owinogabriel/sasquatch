@@ -3,16 +3,16 @@ import React from "react";
 export const Footer = () => {
   return (
     <section className="bg-black py-6">
-      {/* Wrapper for all content */}
+  
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center">
-        {/* Left Section: Logo and Navigation */}
+      
         <div className="text-white">
-          {/* Logo */}
-          <h1 className="text-3xl font-bold">loopstudios</h1>
+      
+          <h1 className="text-3xl font-bold sm:text-center md:text-justify">loopstudios</h1>
 
           {/* Navigation Links */}
-          <nav className="mt-4">
-            <ul className="flex flex-wrap gap-4 md:gap-8 text-sm">
+          <nav className="mt-4 sm:grid">
+            <ul className="md:flex sm:grid md:flex-wrap gap-4 md:gap-8 text-sm sm:text-center">
               <li>
                 <a href="#" className="hover:underline">
                   About
