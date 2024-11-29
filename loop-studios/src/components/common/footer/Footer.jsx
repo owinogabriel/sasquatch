@@ -45,11 +45,12 @@ export const Footer = () => {
         {/* Right Section: Social Media and Copyright */}
         <div className="mt-8 md:mt-0 text-white text-center md:text-right">
           {/* Social Media Icons */}
-          <div className="flex justify-center md:justify-end gap-4">
+          <div className="flex justify-center md:justify-end gap-4 ">
             <a
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
+              className=" hover:underline-offset-2"
             >
               <img src="images/facebook.svg" alt="Facebook" className="w-6" />
             </a>
