@@ -33,7 +33,7 @@ const Creation = () => {
         </div>
 
         <div className='mr-[5rem] font-normal text-base gallery'>
-          <button className='border border-black px-4 rounded-sm '>SEE ALL</button>
+          <button className='border border-black px-4 rounded-sm hover:bg-slate-950 hover:text-slate-200'>SEE ALL</button>
         </div>
 
       </div>
@@ -57,7 +57,7 @@ const Creation = () => {
           <div key={index} className="relative rounded overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 ">
             <img src={item.src} alt={`Image ${index + 1}`} className="w-full h-auto " />
             {/* Text overlay */}
-            <div className="absolute inset-0 flex items-center justify-center text-lg mt-[4rem] mr-[5rem] text-start">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4 group-hover:bg-opacity-75 transition cursor-pointer">
               <span className="text-white  font-light">{item.text}</span>
             </div>
 
