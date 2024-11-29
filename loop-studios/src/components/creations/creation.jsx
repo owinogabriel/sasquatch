@@ -28,11 +28,11 @@ const Creation = () => {
 
       {/* {creation and button } */}
       <div className='flex justify-between'>
-        <div className='text-3xl font-light ml-[4rem] mb-[2rem] header'>
+        <div className='text-3xl font-light md:text-center ml-[4rem] mb-[2rem] header'>
           <h1>OUR CREATIONS</h1>
         </div>
 
-        <div className='mr-[5rem] font-normal text-base gallery'>
+        <div className='mr-[5rem] font-normal text-base sm:justify-'>
           <button className='border border-black px-4 rounded-sm hover:bg-slate-950 hover:text-slate-200'>SEE ALL</button>
         </div>
 
