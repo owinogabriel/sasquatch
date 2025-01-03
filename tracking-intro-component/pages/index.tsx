@@ -1,4 +1,5 @@
 
+import Header from "@/components/layout/Header";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -14,6 +15,7 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
   <div>
+ <Header />
     </div>
   );
 }
