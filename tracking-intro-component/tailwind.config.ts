@@ -22,6 +22,9 @@ export default {
         '40%': '40%',
         '120%': '120%',
       },
+      letterSpacing: {
+        'extra-wide': '0.5em',
+      },
     },
   },
   plugins: [],
