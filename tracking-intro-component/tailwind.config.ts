@@ -12,6 +12,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      extend: {
+        backgroundImage: {
+          'devices': "url('/devices.svg')",
+        },
+      },
+      
+      backgroundSize: {
+        '40%': '40%',
+        '120%': '120%',
+      },
     },
   },
   plugins: [],
