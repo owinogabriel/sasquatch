@@ -27,15 +27,30 @@ const Header: React.FC = () => {
           <li className="hover:underline">  <a href="">Pricing</a></li>
         </ul>
 
-        <button className="ml-[2rem] text-[#EDF2F6] font-semibold">Login</button>
+        <button className="ml-[2rem] text-[#CACACC] font-semibold font-sans hover:bg-[#EDF2F6] p-2 py-1 rounded-md hover:text-slate-900">Login</button>
       </nav>
-      
-         {/* Hero Section */}
-      <div className="flex items-center justify-center h-[50%] text-center mr-[15rem]">
-        <div className="uppercase inline-flex gap-3 ">
-         <h1 className=" bg-black text-base text-white font-medium px-3 py-1 rounded-full">new</h1>
-         <span className="text-slate-400 font-serif mt-2">monograph dashboard</span>
+
+      {/* Hero Section */}
+      <div className="flex items-center justify-center  mt-[6rem]  mr-[15rem]">
+        <div className="flex flex-col items-center gap-4 justify-start">
+          <div className="uppercase inline-flex gap-3 ">
+            <span className=" bg-black text-base text-white font-medium px-3 py-1 rounded-full">new</span>
+            <span className="text-slate-400 font-serif mt-1">monograph dashboard</span>
+          </div>
+          <h1 className="uppercase justify-center  text-black font-bold text-justify text-3xl">
+            powerful insights <br /> into your team
+          </h1>
+
+          <p className="text-slate-400 text-justify font-medium mr-[3rem]">Project planning and time tracking <br /> for agile teams</p>
+          <div className="inline-flex gap-3  mt-[2rem] ml-[4rem]">
+            <button className="bg-[#FF5D5F] p-5 rounded-md py-2 uppercase text-slate-100 text-lg font-medium hover:bg-[#FF8584]">
+              shedule a demo
+            </button>
+            <span className="uppercase mt-[0.5rem] text-slate-400 tracking-widest">to see a preview</span>
+          </div>
+
         </div>
+
       </div>
     </header>
   )
