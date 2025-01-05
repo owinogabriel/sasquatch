@@ -48,7 +48,7 @@ const Header: React.FC = () => {
       <Image
           src={devices}
           alt="Person using VR headset"
-          className="object-contain w-full h-[100%] md:w-[40%]  md:h-[400px] md:absolute md:inset-x-[10rem] top-0"
+          className="object-contain w-full h-[100%] md:w-[40%]  md:h-[400px] md:absolute md:top-0 md:right-0"
         />
 
       {/* Hero Section */}
