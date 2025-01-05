@@ -48,31 +48,31 @@ const Header: React.FC = () => {
       <Image
           src={devices}
           alt="Person using VR headset"
-          className="object-contain w-full h-[100%] md:w-[40%]  md:h-[400px] md:absolute md:top-0 md:right-0"
+          className="object-contain absolute w-full justify-self-center h-[30%] md:w-[40%]  md:h-[400px] md:absolute md:top-10 md:right-0"
         />
 
       {/* Hero Section */}
-      <div className="flex items-center md:flex-row flex-col md:p-[9rem] md:mr-[10rem] justify-center md:space-y-10">
-        <div className="flex flex-col items-center gap-4 justify-start">
-          <div className="uppercase inline-flex gap-3 ">
-            <span className=" bg-black text-base text-white font-medium px-3 py-1 rounded-full">new</span>
-            <span className="text-slate-400 font-serif mt-1">monograph dashboard</span>
-          </div>
-          <h1 className="uppercase justify-center  text-black font-bold text-justify text-3xl">
-            powerful insights <br /> into your team
-          </h1>
+      <div className="flex items-center md:flex-row text-justify flex-col md:p-[9rem] md:mr-[10rem] justify-center md:space-y-10 h-screen">
+  <div className="flex flex-col items-center gap-4 justify-center">
+    <div className="uppercase inline-flex gap-3 ">
+      <span className="bg-black text-base text-white font-medium px-3 py-1 rounded-full">new</span>
+      <span className="text-slate-400 font-serif mt-1">monograph dashboard</span>
+    </div>
+    <h1 className="uppercase text-black font-bold text-3xl">
+      powerful insights <br /> into your team
+    </h1>
+    <p className="text-slate-400 mr-[3rem]  font-medium">
+      Project planning and time tracking <br /> for agile teams
+    </p>
+    <div className="inline-flex gap-3 mt-[2rem] ml-[4rem]">
+      <button className="bg-[#FF5D5F] px-5 py-2 rounded-md uppercase text-slate-100 text-lg font-medium hover:bg-[#FF8584]">
+        schedule a demo
+      </button>
+      <span className="uppercase mt-[0.5rem] text-slate-400 tracking-widest">to see a preview</span>
+    </div>
+  </div>
+</div>
 
-          <p className="text-slate-400 text-justify font-medium mr-[3rem]">Project planning and time tracking <br /> for agile teams</p>
-          <div className="inline-flex gap-3  mt-[2rem] ml-[4rem]">
-            <button className="bg-[#FF5D5F] p-5 rounded-md py-2 uppercase text-slate-100 text-lg font-medium hover:bg-[#FF8584]">
-              shedule a demo
-            </button>
-            <span className="uppercase mt-[0.5rem] text-slate-400 tracking-widest">to see a preview</span>
-          </div>
-
-        </div>
-
-      </div>
     </header>
   )
 }
