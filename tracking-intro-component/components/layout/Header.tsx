@@ -52,7 +52,7 @@ const Header: React.FC = () => {
         />
 
       {/* Hero Section */}
-      <div className="flex items-center md:flex-row text-justify flex-col md:p-[9rem] md:mr-[10rem] justify-center md:space-y-10 h-screen">
+      <div className="flex items-center mt-[-2rem] md:flex-row text-justify flex-col md:p-[9rem] md:mr-[10rem] justify-center md:space-y-10 h-screen">
   <div className="flex flex-col items-center gap-4 justify-center">
     <div className="uppercase inline-flex gap-3 ">
       <span className="bg-black text-base text-white font-medium px-3 py-1 rounded-full">new</span>
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
     <p className="text-slate-400 mr-[3rem]  font-medium">
       Project planning and time tracking <br /> for agile teams
     </p>
-    <div className="inline-flex gap-3 mt-[2rem] ml-[4rem]">
+    <div className="inline-flex gap-3 mt-[1rem] ml-[4rem]">
       <button className="bg-[#FF5D5F] px-5 py-2 rounded-md uppercase text-slate-100 text-lg font-medium hover:bg-[#FF8584]">
         schedule a demo
       </button>
