@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/public/logo.svg"
+import devices from "@/public/devices.svg"
 
 
 
@@ -8,11 +9,9 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white  bg-no-repeat bg-cover  w-full  h-[400px] bg-right"
-      style={{
-        backgroundImage: "url('devices.svg')",
-        backgroundSize: '40%'
-      }}>
+    <header className="bg-white bg-no-repeat bg-cover  "
+     >
+       
       {/* logo */}
       <div className="flex items-center space-x-2 mt-[3rem] ml-[5rem]">
         <Image src={logo}
@@ -20,6 +19,7 @@ const Header: React.FC = () => {
           className="h-10 w-10"
           quality={100} />
       </div>
+     
       {/* Hamburger Menu for Mobile */}
     {/* Hamburger Menu for Mobile */}
 <button
@@ -45,9 +45,14 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
+      <Image
+          src={devices}
+          alt="Person using VR headset"
+          className="object-contain w-full h-[100%] md:w-[40%]  md:h-[400px] md:absolute md:inset-x-[10rem] top-0"
+        />
 
       {/* Hero Section */}
-      <div className="flex items-center justify-center  mt-[6rem]  mr-[15rem]">
+      <div className="flex items-center md:flex-row flex-col md:p-[9rem] md:mr-[10rem] justify-center md:space-y-10">
         <div className="flex flex-col items-center gap-4 justify-start">
           <div className="uppercase inline-flex gap-3 ">
             <span className=" bg-black text-base text-white font-medium px-3 py-1 rounded-full">new</span>
