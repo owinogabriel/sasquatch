@@ -36,12 +36,12 @@ const Header: React.FC = () => {
           menuOpen ? 'block' : 'hidden'
         } md:block md:relative md:mt-[-6rem] md:mr-[9rem] md:justify-self-end md:shadow-none md:p-0`}
       >
-        <ul className="space-y-4 md:space-y-0 md:flex md:gap-8">
+        <ul className="space-y-4 md:space-y-0 md:flex md:gap-8  text-center">
           <li className="hover:underline"><a href="#" className="hover:text-blue-500">PRODUCT</a></li>
           <li className="hover:underline"><a href="#" className="hover:text-blue-500">FEATURES</a></li>
           <li className="hover:underline"><a href="#" className="hover:text-blue-500">PRICING</a></li>
           <li className=" border-t md:border-none">
-            <a href="#" className="text-gray-400 cursor-pointer">LOGIN</a>
+            <a href="#" className="text-gray-400 cursor-pointer hover:bg-slate-400 hover:text-black rounded-md p-2 py-1 md:mt-4">LOGIN</a>
           </li>
         </ul>
       </nav>
