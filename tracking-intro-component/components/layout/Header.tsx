@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/public/logo.svg"
 
 
 
 const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header className="bg-white  bg-no-repeat bg-cover  w-full  h-[400px] bg-right"
       style={{
@@ -18,16 +20,30 @@ const Header: React.FC = () => {
           className="h-10 w-10"
           quality={100} />
       </div>
+      {/* Hamburger Menu for Mobile */}
+    {/* Hamburger Menu for Mobile */}
+<button
+  className="text-black text-3xl md:hidden absolute top-9 right-4 z-50"
+  aria-label="Toggle menu"
+  onClick={() => setMenuOpen((prev) => !prev)}
+>
+  {menuOpen ? "X" : "☰"}
+</button>
 
-      {/* navbar */}
-      <nav className="justify-self-end mr-[6rem] mt-[-2rem]" >
-        <ul className="uppercase inline-flex gap-4  font-medium cursor-pointer">
-          <li className="hover:underline">  <a href="">Project</a></li>
-          <li className="hover:underline">  <a href="">Features</a></li>
-          <li className="hover:underline">  <a href="">Pricing</a></li>
+      {/* Menu */}
+      <nav
+        className={`absolute top-16 right-4 bg-white shadow-lg rounded-md p-6 w-56 z-40 ${
+          menuOpen ? 'block' : 'hidden'
+        } md:block md:relative md:mt-[-6rem] md:mr-[9rem] md:justify-self-end md:shadow-none md:p-0`}
+      >
+        <ul className="space-y-4 md:space-y-0 md:flex md:gap-8">
+          <li className="hover:underline"><a href="#" className="hover:text-blue-500">PRODUCT</a></li>
+          <li className="hover:underline"><a href="#" className="hover:text-blue-500">FEATURES</a></li>
+          <li className="hover:underline"><a href="#" className="hover:text-blue-500">PRICING</a></li>
+          <li className=" border-t md:border-none">
+            <a href="#" className="text-gray-400 cursor-pointer">LOGIN</a>
+          </li>
         </ul>
-
-        <button className="ml-[2rem] text-[#CACACC] font-semibold font-sans hover:bg-[#EDF2F6] p-2 py-1 rounded-md hover:text-slate-900">Login</button>
       </nav>
 
       {/* Hero Section */}
