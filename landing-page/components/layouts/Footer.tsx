@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
 
           </form>
           <div className="text-center mt-[4rem] text-sm text-gray-400">
-            Copyright 2020. All Rights Reserved.
+          &copy; 2020. All Rights Reserved.
           </div>
         </div>
       </div>
