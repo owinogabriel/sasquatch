@@ -46,17 +46,23 @@ export default function Home() {
               software is tailor-made for modern digital <br />
               products teams.</p>
 
-            <div className="absolute md:bottom-2 md:right-[2rem]">
-              <div className="inline-flex text-lg items-center justify-center gap-4 text-[#242E52] font-bold rounded-full">
-                <span className="h-10 w-10 py-2 px-2  bg-[#FF6B6B] text-white font-bold rounded-full">02</span>
-
-                Advanced built-in reports
-
+            <div className="absolute md:top md:mt-[3rem] md:right-[2rem]">
+            <div className="inline-flex  text-lg items-center justify-center gap-4 text-[#242E52] font-bold rounded-full">
+                <span className="h-10 w-10 py-2 px-2  bg-[#FF6B6B] text-white font-bold rounded-full">01</span>
+              Track company-wide progress
               </div>
               <div>
-                {/* <h3 className="text-lg font-bold text-[#242E52]">
-                  Advanced built-in reports
-                </h3> */}
+                <p className="mt-2 text-[#bcb9b9] py-4 font-extralight text-sm">
+                 See how your day-to-day tasks fit into the wider vision. <br /> Go from tracking progess
+                 of the milestone level all the <br /> way done to the smallest of details. Never lose sight of <br /> the bigger picture again.
+                </p>
+              </div>
+
+              <div className="inline-flex text-lg items-center justify-center gap-4 text-[#242E52] font-bold rounded-full">
+                <span className="h-10 w-10 py-2 px-2  bg-[#FF6B6B] text-white font-bold rounded-full">02</span>
+              Advanced built-in reports
+              </div>
+              <div>
                 <p className="mt-2 text-[#bcb9b9] py-4 font-extralight text-sm">
                   Set internal delivery estimates and track progress toward <br /> company goals. Our customizable dashboard helps youb <br /> build out the reports you need to keep key stakeholders <br /> informed.
                 </p>
