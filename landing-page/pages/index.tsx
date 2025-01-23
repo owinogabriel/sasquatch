@@ -38,42 +38,51 @@ export default function Home() {
               height={80}
             />
           </div>
+          <div className="md:mt-[10rem] md:flex-1">
+  <h1 className="md:text-3xl text-[#242E52] font-bold leading-relaxed">
+    What's different about <br /> Manage?
+  </h1>
+  <p className="text-[#bcb9b9] py-4 font-extralight text-sm leading-relaxed">
+    Manage provides all the functionality your <br />
+    team needs, without the complexity. Our <br />
+    software is tailor-made for modern digital <br />
+    product teams.
+  </p>
 
-          <div className="md:mt-[6rem] md:flex-1">
-            <h1 className="md:text-3xl text-[#242E52] font-bold">What's different about <br /> Manage?</h1>
-            <p className="text-[#bcb9b9] py-4 font-extralight text-sm">Manage provides all the functionality your <br />
-              teams needs, without the complexity. Our <br />
-              software is tailor-made for modern digital <br />
-              products teams.</p>
+  <div className="justify-center">
+    <div className="absolute md:top-[30rem] md:right-[5rem] space-y-4">
+      {/* Feature 1 */}
+      <div className="inline-flex items-center gap-4 text-lg text-[#242E52] font-bold">
+        <span className="h-10 w-10 flex items-center justify-center bg-[#FF6B6B] text-white font-bold rounded-full">
+          01
+        </span>
+        Track company-wide progress
+      </div>
+      <p className="mt-2 text-[#bcb9b9] font-extralight text-sm leading-relaxed">
+        See how your day-to-day tasks fit into the wider vision. <br />
+        Go from tracking progress at the milestone level all the <br />
+        way down to the smallest of details. Never lose sight of <br />
+        the bigger picture again.
+      </p>
 
-            <div className="absolute md:top md:mt-[3rem] md:right-[2rem]">
-            <div className="inline-flex  text-lg items-center justify-center gap-4 text-[#242E52] font-bold rounded-full">
-                <span className="h-10 w-10 py-2 px-2  bg-[#FF6B6B] text-white font-bold rounded-full">01</span>
-              Track company-wide progress
-              </div>
-              <div>
-                <p className="mt-2 text-[#bcb9b9] py-4 font-extralight text-sm">
-                 See how your day-to-day tasks fit into the wider vision. <br /> Go from tracking progess
-                 of the milestone level all the <br /> way done to the smallest of details. Never lose sight of <br /> the bigger picture again.
-                </p>
-              </div>
-
-              <div className="inline-flex text-lg items-center justify-center gap-4 text-[#242E52] font-bold rounded-full">
-                <span className="h-10 w-10 py-2 px-2  bg-[#FF6B6B] text-white font-bold rounded-full">02</span>
-              Advanced built-in reports
-              </div>
-              <div>
-                <p className="mt-2 text-[#bcb9b9] py-4 font-extralight text-sm">
-                  Set internal delivery estimates and track progress toward <br /> company goals. Our customizable dashboard helps youb <br /> build out the reports you need to keep key stakeholders <br /> informed.
-                </p>
-              </div>
-            </div>
-            <div>
+      {/* Feature 2 */}
+      <div className="inline-flex items-center gap-4 text-lg text-[#242E52] font-bold">
+        <span className="h-10 w-10 flex items-center justify-center bg-[#FF6B6B] text-white font-bold rounded-full">
+          02
+        </span>
+        Advanced built-in reports
+      </div>
+      <p className="mt-2 text-[#bcb9b9] font-extralight text-sm leading-relaxed">
+        Set internal delivery estimates and track progress toward <br />
+        company goals. Our customizable dashboard helps you <br />
+        build out the reports you need to keep key stakeholders <br />
+        informed.
+      </p>
+    </div>
+  </div>
+</div>
 
 
-            </div>
-
-          </div>
         </div>
 
       </main>
