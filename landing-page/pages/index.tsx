@@ -81,7 +81,7 @@ export default function Home() {
                   informed.
                 </p>
 
-                <div>
+                <div className="mb-2">
                   {/* Feature 2 */}
                   <div className="inline-flex items-center gap-4 text-lg text-[#242E52] font-bold">
                     <span className="h-10 w-10 flex items-center justify-center bg-[#FF6B6B] text-white font-bold rounded-full">
@@ -96,9 +96,7 @@ export default function Home() {
                   </p>
 
                 </div>
-                <div className="mt-12">
-                  <Testimonials />
-                </div>
+          
               </div>
             </div>
           </div>

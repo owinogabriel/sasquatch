@@ -7,7 +7,7 @@ import { faTwitter, faFacebook, faInstagram, faYoutube, faPinterest } from "@for
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#1E1E26] text-white p-8 mt-[5rem]">
+    <footer className="bg-[#1E1E26] text-white p-8 mt-[5rem] ">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
         {/* Logo and Social Icons */}
