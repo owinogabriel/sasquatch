@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Blogr = () => {
   return (
-    <div className='flex  w-screen  bg-[#373854] h-[50vh] bg-cover text-justify
+    <div className='flex  md:w-screen  bg-[#373854] h-[50vh] bg-cover md:text-justify
    -ml-10 rounded-bl-[50px]  bg-left-bottom 
      rounded-tr-[60px] mt-16 bg-no-repeat' style={{
         backgroundImage: "url('assets/bg-circles.svg')",
@@ -22,7 +22,7 @@ export const Blogr = () => {
           State of the Art Infrastructure
         </h2>
 
-        <p className='font-sm mt-5 -ml-32 mr-56 text-stone-100'>With reliability and speed in mind.worldwide data centers provide <br />
+        <p className='font-sm md:mt-5 md:-ml-32 md:mr-56 text-stone-100'>With reliability and speed in mind.worldwide data centers provide <br />
           backbone for ultra-fast conectivity. This ensures your site will load <br />
           instantly, no matter where you readers are, keeping your site <br />
           competitive.</p>
