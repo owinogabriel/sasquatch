@@ -3,11 +3,9 @@ import React from "react";
 export const Footer = () => {
   return (
     <section className="bg-black py-6">
-  
+
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center">
-      
         <div className="text-white">
-      
           <h1 className="text-3xl font-bold sm:text-center md:text-justify">loopstudios</h1>
 
           {/* Navigation Links */}
