@@ -30,5 +30,5 @@ export const Blogr = () => {
 
     </div>
   )
-}
+};
 export default Blogr;
