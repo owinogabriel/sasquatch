@@ -52,7 +52,7 @@ const Creation = () => {
       </div>
 
       {/*mobile layout*/}
-      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 md:hidden lg:grid-cols-4 cursor-pointer  ml-[3rem] mr-[3rem] mobile ">
+      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 cursor-pointer  ml-[3rem] mr-[3rem] mobile ">
         {mobile.map((item, index) => (
           <div key={index} className="relative rounded overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 ">
             <img src={item.src} alt={`Image ${index + 1}`} className="w-full h-auto " />
